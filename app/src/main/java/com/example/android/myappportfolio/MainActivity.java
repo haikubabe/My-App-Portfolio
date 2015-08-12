@@ -39,57 +39,46 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void messageButton1(View view) {
-        //Button button1 = (Button) findViewById(R.id.button1);
-        CharSequence text = "This button will launch Spotify Streamer app!";
-        int duration = Toast.LENGTH_LONG;
+    //To display a toast message
+    void displayText(String s) {
 
-        Toast toast = Toast.makeText(getApplicationContext(),text,duration);
+        int duration = Toast.LENGTH_LONG;
+        Toast toast = Toast.makeText(getApplicationContext(), s, duration);
         toast.show();
     }
 
-    public void messageButton2(View view) {
-
-        CharSequence text = "This button will launch Football Scores app!";
-        int duration = Toast.LENGTH_LONG;
-
-        Toast toast = Toast.makeText(getApplicationContext(), text, duration);
-        toast.show();
+    //method for clicking the spotify button
+    public void spotifyButton(View view) {
+        displayText(getString(R.string.spotify_message));
     }
 
-    public void messageButton3(View view) {
+    //method for clicking the score button
+    public void scoresButton(View view) {
 
-        CharSequence text = "This button will launch Library app!";
-        int duration = Toast.LENGTH_LONG;
-
-        Toast toast = Toast.makeText(getApplicationContext(), text, duration);
-        toast.show();
+        displayText(getString(R.string.scores_message));
     }
 
-    public void messageButton4(View view) {
+    //method for clicking the library button
+    public void libraryButton(View view) {
 
-        CharSequence text = "This button will launch Build It Bigger app!";
-        int duration = Toast.LENGTH_LONG;
-
-        Toast toast = Toast.makeText(getApplicationContext(), text, duration);
-        toast.show();
+        displayText(getString(R.string.library_message));
     }
 
-    public void messageButton5(View view) {
+    //method for clicking the build bigger button
+    public void buildBiggerButton(View view) {
 
-        CharSequence text = "This button will launch XYZ Reader app!";
-        int duration = Toast.LENGTH_LONG;
-
-        Toast toast = Toast.makeText(getApplicationContext(), text, duration);
-        toast.show();
+        displayText(getString(R.string.build_bigger_message));
     }
 
-    public void messageButton6(View view) {
+    //method for clicking the reader button
+    public void readerButton(View view) {
 
-        CharSequence text = "This button will launch my capstone app!";
-        int duration = Toast.LENGTH_LONG;
+        displayText(getString(R.string.reader_message));
+    }
 
-        Toast toast = Toast.makeText(getApplicationContext(), text, duration);
-        toast.show();
+    //method for clicking the capstone button
+    public void capstoneButton(View view) {
+
+        displayText(getString(R.string.capstone_message));
     }
 }

@@ -13,4 +13,11 @@
     <string name="reader">XYZ Reader</string>
     <string name="my_app">Capstone:My Own App</string>
 
+    <string name="spotify_message">This button will launch Spotify Streamer app!</string>
+    <string name="scores_message">This button will launch Football Scores app!</string>
+    <string name="library_message">This button will launch Library app!</string>
+    <string name="build_bigger_message">This button will launch Build It Bigger app!</string>
+    <string name="reader_message">This button will launch XYZ Reader app!</string>
+    <string name="capstone_message">This button will launch my capstone app!</string>
+
 </resources>

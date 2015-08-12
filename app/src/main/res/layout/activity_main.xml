@@ -1,77 +1,84 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/nanodegree"
-        android:textAppearance="?android:textAppearanceLarge" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@color/orange"
-        android:onClick="messageButton1"
-        android:text="@string/spotify"
-        android:textColor="@color/text_color" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_margin_bottom"
+            android:layout_marginTop="@dimen/text_margin_top"
+            android:text="@string/nanodegree"
+            android:textAppearance="?android:textAppearanceLarge" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@color/orange"
-        android:onClick="messageButton2"
-        android:text="@string/scores"
-        android:textColor="@color/text_color" />
+        <Button
+            android:id="@+id/spotify_streamer_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/button_margin_bottom"
+            android:background="@color/orange"
+            android:onClick="spotifyButton"
+            android:text="@string/spotify"
+            android:textColor="@color/text_color" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@color/orange"
-        android:onClick="messageButton3"
-        android:text="@string/library"
-        android:textColor="@color/text_color" />
+        <Button
+            android:id="@+id/scores_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/button_margin_bottom"
+            android:background="@color/orange"
+            android:onClick="scoresButton"
+            android:text="@string/scores"
+            android:textColor="@color/text_color" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@color/orange"
-        android:onClick="messageButton4"
-        android:text="@string/bigger"
-        android:textColor="@color/text_color" />
+        <Button
+            android:id="@+id/library_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/button_margin_bottom"
+            android:background="@color/orange"
+            android:onClick="libraryButton"
+            android:text="@string/library"
+            android:textColor="@color/text_color" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@color/orange"
-        android:onClick="messageButton5"
-        android:text="@string/reader"
-        android:textColor="@color/text_color" />
+        <Button
+            android:id="@+id/build_bigger_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/button_margin_bottom"
+            android:background="@color/orange"
+            android:onClick="buildBiggerButton"
+            android:text="@string/bigger"
+            android:textColor="@color/text_color" />
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@color/dark_pink"
-        android:onClick="messageButton6"
-        android:text="@string/my_app"
-        android:textColor="@color/text_color" />
+        <Button
+            android:id="@+id/reader_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/button_margin_bottom"
+            android:background="@color/orange"
+            android:onClick="readerButton"
+            android:text="@string/reader"
+            android:textColor="@color/text_color" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/capstone_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/button_margin_bottom"
+            android:background="@color/dark_pink"
+            android:onClick="capstoneButton"
+            android:text="@string/my_app"
+            android:textColor="@color/text_color" />
+
+    </LinearLayout>
+</ScrollView>
